@@ -1,8 +1,7 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: matijasec/qedip
   branch: main
-  identity_url: "https://fluffy-bienenstitch-8188e8.netlify.app/.netlify/identity"
-  gateway_url: "https://fluffy-bienenstitch-8188e8.netlify.app/.netlify/git"
 
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
