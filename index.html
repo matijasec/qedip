@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QED IP | Patent Attorney for Computer-Implemented Inventions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+        
+        .nav {
+            background: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            color: #000;
+        }
+        
+        .logo-square {
+            width: 60px;
+            height: 60px;
+            background: black;
+            flex-shrink: 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #000;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #4b5563 100%);
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 850px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.95;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #000;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.4);
+        }
+        
+        .trust-badges {
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+        
+        .trust-badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-alt {
+            background: #f9fafb;
+        }
+        
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            color: #1f2937;
+        }
+        
+        .section p {
+            font-size: 1.2rem;
+            color: #4b5563;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            text-align: center;
+        }
+        
+        .three-col {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .col-item {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .col-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .col-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .col-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .col-item p {
+            font-size: 1rem;
+            color: #6b7280;
+            text-align: center;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            border-left: 4px solid #000;
+        }
+        
+        .service-card h3 {
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .service-card p {
+            color: #6b7280;
+            font-size: 0.95rem;
+            text-align: left;
+        }
+        
+        .ideal-for {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        .ideal-item {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 500;
+            color: #1f2937;
+            border: 2px solid #e5e7eb;
+        }
+        
+        .blog-preview {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .blog-card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            border: 1px solid #e5e7eb;
+        }
+        
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .blog-card-content {
+            padding: 2rem;
+        }
+        
+        .blog-card h3 {
+            color: #1f2937;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+        
+        .blog-card a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        
+        .final-cta {
+            background: linear-gradient(135deg, #000000 0%, #4b5563 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+        
+        .final-cta h2 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+        
+        .final-cta p {
+            color: white;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+        }
+        
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        .disclaimer {
+            font-size: 0.85rem;
+            color: #6b7280;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .logo-square {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <div class="logo">
+            <div class="logo-square"></div>
+            <span>QED IP</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#blog">Insights</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Patent Protection for<br>Computer-Implemented Inventions</h1>
+        <p>Former USPTO examiner specializing in AI, machine learning, cryptography, and software patents. We've examined hundreds of applications&mdash;now we help technical founders get theirs approved.</p>
+        <a href="#contact" class="cta-button">Schedule Free Consultation</a>
+        
+        <div class="trust-badges">
+            <div class="trust-badge">
+                <span>&#10003;</span> Former USPTO Patent Examiner
+            </div>
+            <div class="trust-badge">
+                <span>&#10003;</span> Computer Science Art Units
+            </div>
+            <div class="trust-badge">
+                <span>&#10003;</span> Mathematics &amp; Software Engineering
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Most Patent Attorneys Don't Understand Your Technology</h2>
+        <p>You're building cutting-edge AI systems, cryptographic protocols, or complex software. But when you talk to patent attorneys, you spend hours explaining the fundamentals. They don't grasp the algorithms. They've never seen how the USPTO examines these applications. And their generic approach leads to expensive rejections and wasted time.</p>
+    </section>
+    
+    <section class="section section-alt">
+        <h2>We've Been On Both Sides</h2>
+        
+        <div class="three-col">
+            <div class="col-item">
+                <div class="col-icon">🔬</div>
+                <h3>Technical Depth</h3>
+                <p>Mathematics and software engineering background. We read your code and understand your algorithms&mdash;no translation required.</p>
+            </div>
+            
+            <div class="col-item">
+                <div class="col-icon">⚖️</div>
+                <h3>Examiner Experience</h3>
+                <p>Years examining AI, ML, cryptography, and software applications at the USPTO. We know what arguments work and why most applications fail.</p>
+            </div>
+            
+            <div class="col-item">
+                <div class="col-icon">🚀</div>
+                <h3>Startup-Focused</h3>
+                <p>Transparent pricing. Fast turnaround. We work with founders who need strong IP without the BigLaw overhead.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="services" class="section">
+        <h2>How We Help</h2>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>Nonprovisional Patent Applications</h3>
+                <p>Flat fee pricing for standard complexity. Complete preparation and filing with examiner insights built in.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Patent Prosecution &amp; Office Action Responses</h3>
+                <p>Navigate rejections efficiently with insider knowledge of what examiners actually want to see.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Patent Strategy for Startups</h3>
+                <p>IP roadmap tailored to your fundraising timeline and product development goals.</p>
+            </div>
+            
+            <div class="service-card">
+                <h3>Provisional Applications</h3>
+                <p>Fast, affordable protection while you develop your technology and validate the market.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section section-alt">
+        <h2>Ideal For:</h2>
+        
+        <div class="ideal-for">
+            <div class="ideal-item">AI/ML startups building proprietary algorithms</div>
+            <div class="ideal-item">Cryptography and blockchain innovators</div>
+            <div class="ideal-item">Cybersecurity companies</div>
+            <div class="ideal-item">Fintech with novel technical approaches</div>
+            <div class="ideal-item">Software companies with complex implementations</div>
+            <div class="ideal-item">Technical founders who need an attorney who speaks their language</div>
+        </div>
+    </section>
+    
+    <section id="blog" class="section">
+        <h2>Latest Insights</h2>
+        
+        <div class="blog-preview">
+            <div class="blog-card">
+                <div class="blog-card-content">
+                    <h3>Why 80% of AI Patent Applications Get Rejected (And How To Avoid It)</h3>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <div class="blog-card-content">
+                    <h3>Inside the USPTO: How Computer-Implemented Inventions Are Actually Examined</h3>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="blog-card">
+                <div class="blog-card-content">
+                    <h3>Case Study: Overcoming Alice Rejections in Machine Learning Patents</h3>
+                    <a href="#">Read More &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="section section-alt">
+        <h2>About QED IP</h2>
+        
+        <div style="max-width: 800px; margin: 0 auto;">
+            <p style="text-align: center;">QED IP was founded by former USPTO patent examiners with deep technical backgrounds in mathematics and software engineering. We spent years examining AI, machine learning, cryptography, and cybersecurity applications, gaining unique insight into what makes patent applications succeed or fail.</p>
+            
+            <p style="text-align: center; margin-top: 1.5rem;">Based in St. Louis and working with innovators worldwide, we help technical founders protect their inventions without the complexity and cost of traditional law firms. All consultations are conducted via secure videoconference.</p>
+            
+            <p style="text-align: center; margin-top: 1.5rem;"><a href="#" style="color: #000; font-weight: 600;">Meet our team &rarr;</a></p>
+        </div>
+    </section>
+    
+    <section id="contact" class="final-cta">
+        <h2>Ready to Protect Your Innovation?</h2>
+        <p>Schedule a free 30-minute consultation to discuss your invention and patent strategy.</p>
+        <a href="mailto:contact@qedip.com" class="cta-button">Schedule Consultation</a>
+        <p style="margin-top: 1.5rem; font-size: 1rem;">Or email us directly at contact@qedip.com</p>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#">People</a>
+            <a href="#blog">Insights</a>
+            <a href="#contact">Contact</a>
+            <a href="#">LinkedIn</a>
+        </div>
+        
+        <div class="disclaimer">
+            Attorney Advertising. Prior results do not guarantee a similar outcome. This website does not create an attorney-client relationship.
+        </div>
+        
+        <p style="margin-top: 2rem; color: #6b7280;">© 2025 QED IP. All rights reserved.</p>
+    </footer>
+</body>
+</html>
