@@ -2,8 +2,7 @@ backend:
   name: github
   repo: matijasec/qedip
   branch: main
-  base_url: https://fluffy-bienenstitch-8188e8.netlify.app
-  auth_endpoint: auth
+
 
 
 media_folder: "images/uploads"
@@ -21,4 +20,5 @@ collections:
       - {label: "Author", name: "author", widget: "string", default: "QED IP"}
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Body", name: "body", widget: "markdown"}
+
 
