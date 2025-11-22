@@ -4,12 +4,12 @@ date: 2024-11-22
 author: Robert Matijasec
 categories: [Patent Law, Artificial Intelligence, USPTO Practice]
 tags: [AI patents, patent prosecution, USPTO examination, machine learning patents, blockchain patents]
-excerpt: "I spent three years as a USPTO patent examiner in Art Units 2498 and 2496, examining AI, machine learning, and blockchain applications. Here's what I learned about why most AI patent applications failóand how to draft claims that actually survive examination."
+excerpt: "I spent three years as a USPTO patent examiner in Art Units 2498 and 2496, examining AI, machine learning, and blockchain applications. Here's what I learned about why most AI patent applications fail‚Äîand how to draft claims that actually survive examination."
 ---
 
 # Why Your AI Patent Application Will Get Rejected (And How to Fix It Before Filing)
 
-I spent three years as a USPTO patent examiner in Art Units 2498 and 2496óthe art units that handle AI, machine learning, cryptography, and cybersecurity applications. I examined hundreds of AI patent applications. Most of them got rejected.
+I spent three years as a USPTO patent examiner in Art Units 2498 and 2496‚Äîthe art units that handle AI, machine learning, cryptography, and cybersecurity applications. I examined hundreds of AI patent applications. Most of them got rejected.
 
 Not because the technology wasn't innovative. Not because the inventors weren't brilliant. But because the patent applications themselves were drafted without understanding what examiners actually look for.
 
@@ -29,7 +29,7 @@ Let me show you an actual rejection I issued. I've anonymized it, but this is ex
 > - aggregating the reconstruction error and a confidence score corresponding to a complexity level of the autoencoder network;
 > - and generating, from the level of difficulty score and an initial data access policy level, a derived data access policy level...
 
-**What I Found:**
+**What I Found (in about 30 minutes of searching):**
 
 1. **Ali et al., "Automatic Modulation Classification Using Deep Learning Based on Sparse Autoencoders With Nonnegativity Constraints"** (Nov 2017)
    - Disclosed using autoencoders with reconstruction error minimization
@@ -52,7 +52,7 @@ Let me show you an actual rejection I issued. I've anonymized it, but this is ex
 
 **Result:** All 20 claims rejected.
 
-**The Problem:** The claims were so broad they essentially described "use an autoencoder to adjust policies"ówhich is just combining two well-known concepts. There was no specific technical innovation. No unexpected results. No solution to a technical problem that others had failed to solve.
+**The Problem:** The claims were so broad they essentially described "use an autoencoder to adjust policies"‚Äîwhich is just combining two well-known concepts. There was no specific technical innovation. No unexpected results. No solution to a technical problem that others had failed to solve.
 
 ## Why AI Patent Applications Are Different
 
@@ -99,7 +99,7 @@ When I examined an AI patent application, here's my workflow:
 I'm looking for:
 - **Specific technical details** (not "a neural network" but "a convolutional neural network with specified architecture")
 - **Concrete functional language** (not "processes data" but "extracts features using X technique to solve Y problem")
-- **Technical improvements** (not "faster" but "reduces computational complexity from O(n≤) to O(n log n) by...")
+- **Technical improvements** (not "faster" but "reduces computational complexity from O(n¬≤) to O(n log n) by...")
 
 ### Step 2: Identify the Alleged Innovation  
 What is *actually* new here? Strip away:
@@ -116,7 +116,7 @@ I'd typically search:
 - Recent conference papers (NeurIPS, ICML, CVPR, etc.)
 - Existing patents in the same space
 
-Finding three references that together teach all the claim elements? That's a rejection under ß 103 (obviousness).
+Finding three references that together teach all the claim elements? That's a rejection under ¬ß 103 (obviousness).
 
 ### Step 4: Apply *Alice*  
 If the claims survive obviousness, I'd check patent eligibility:
@@ -148,9 +148,9 @@ See the difference? The second claim identifies:
 > storing a trained machine learning model...
 
 **Better Claim:**
-> storing a trained convolutional neural network comprising: an encoder portion with four convolutional layers using 3◊3 kernels, each followed by batch normalization and ReLU activation; a bottleneck layer that compresses the representation to a 128-dimensional latent space; and a decoder portion that reconstructs...
+> storing a trained convolutional neural network comprising: an encoder portion with four convolutional layers using 3√ó3 kernels, each followed by batch normalization and ReLU activation; a bottleneck layer that compresses the representation to a 128-dimensional latent space; and a decoder portion that reconstructs...
 
-The details matter. They show you're not just using "a neural network" genericallyóyou made specific architectural choices for specific technical reasons.
+The details matter. They show you're not just using "a neural network" generically‚Äîyou made specific architectural choices for specific technical reasons.
 
 ### 3. Highlight Technical Improvements
 
@@ -165,7 +165,7 @@ Examiners want to see:
 - The technical reason for the improvement  
 - Why it's not obvious to just combine existing techniques
 
-### 4. Don't Just Describe the AlgorithmóDescribe How It Integrates
+### 4. Don't Just Describe the Algorithm‚ÄîDescribe How It Integrates
 
 **Bad Claim:**
 > receiving data; processing the data with a neural network; outputting a result
@@ -213,21 +213,21 @@ The specification should include enough detail that someone skilled in the art c
 - Hyperparameters (or ranges)
 - Example results
 
-If your spec is vague ("we use a neural network to achieve improved results"), expect a rejection under ß 112 for lack of enablement.
+If your spec is vague ("we use a neural network to achieve improved results"), expect a rejection under ¬ß 112 for lack of enablement.
 
 ## The QED IP Advantage: I Know What Examiners Are Looking For
 
 When I draft AI patent applications now, I write them thinking about what I would have looked for as an examiner:
 
-? Specific technical details that show real innovation  
-? Claim language that distinguishes from obvious prior art  
-? Integration of multiple technical elements to solve a concrete problem  
-? Technical improvements that are measurable and non-obvious  
-? Specification that enables the invention without being so detailed it limits claim scope  
+‚úÖ Specific technical details that show real innovation  
+‚úÖ Claim language that distinguishes from obvious prior art  
+‚úÖ Integration of multiple technical elements to solve a concrete problem  
+‚úÖ Technical improvements that are measurable and non-obvious  
+‚úÖ Specification that enables the invention without being so detailed it limits claim scope  
 
 I also know the prior art landscape in AI/ML because I spent three years searching it daily. I know what papers from NeurIPS 2019 are going to sink your claims. I know which patents in the space are actually relevant and which are just noise.
 
-Most importantly, I know how to position your innovation to survive examinationóbecause I know exactly what would have convinced me to allow an application when I was on the other side of the desk.
+Most importantly, I know how to position your innovation to survive examination‚Äîbecause I know exactly what would have convinced me to allow an application when I was on the other side of the desk.
 
 ## Your AI Innovation Deserves Protection That Actually Works
 
@@ -238,13 +238,13 @@ Don't let a poorly drafted patent application waste your time and money. Don't f
 If you're working on AI, machine learning, blockchain, or cryptography innovations, I can help you protect them the right way.
 
 **Contact QED IP:**  
-?? [robert@qedip.com](mailto:robert@qedip.com)  
-?? [qedip.com](https://qedip.com)  
-?? Serving AI and blockchain startups nationwide
+üìß [robert@qedip.com](mailto:robert@qedip.com)  
+üåê [qedip.com](https://qedip.com)  
+üìç Serving AI and blockchain startups nationwide
 
 ---
 
 **About the Author:**  
-Robert Matijasec is a patent attorney and founder of QED IP. He spent three years as a USPTO patent examiner in Art Units 2498 and 2496, examining AI, machine learning, cryptography, and cybersecurity applications. He leverages his insider knowledge of USPTO examination procedures to help startups draft patent applications that actually survive examination. He's admitted to practice before the USPTO and focuses on AI, blockchain, and software innovations.
+Robert Matijasec is a patent attorney and founder of QED IP (Bukva LLC). He spent three years as a USPTO patent examiner in Art Units 2498 and 2496, examining AI, machine learning, cryptography, and cybersecurity applications. He leverages his insider knowledge of USPTO examination procedures to help startups draft patent applications that actually survive examination. He's admitted to practice before the USPTO and focuses on AI, blockchain, and software innovations.
 
 *This post is for informational purposes only and does not constitute legal advice. For specific guidance on your patent application, please schedule a consultation.*
