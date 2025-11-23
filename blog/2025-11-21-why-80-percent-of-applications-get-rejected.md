@@ -245,6 +245,7 @@ If you're working on AI, machine learning, blockchain, or cryptography innovatio
 ---
 
 **About the Author:**  
-Robert Matijasec is a patent attorney and founder of QED IP (Bukva LLC). He spent three years as a USPTO patent examiner in Art Units 2498 and 2496, examining AI, machine learning, cryptography, and cybersecurity applications. He leverages his insider knowledge of USPTO examination procedures to help startups draft patent applications that actually survive examination. He's admitted to practice before the USPTO and focuses on AI, blockchain, and software innovations.
+Robert Matijasec is a patent attorney and founder of QED IP. He spent three years as a USPTO patent examiner in Art Units 2498 and 2496, examining AI, machine learning, cryptography, and cybersecurity applications. He leverages his insider knowledge of USPTO examination procedures to help startups draft patent applications that actually survive examination. He's admitted to practice before the USPTO and focuses on AI, blockchain, and software innovations.
 
 *This post is for informational purposes only and does not constitute legal advice. For specific guidance on your patent application, please schedule a consultation.*
+
