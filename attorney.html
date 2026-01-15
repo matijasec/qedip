@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robert Matijasec | Patent Attorney | QED IP</title>
+    <meta name="description" content="Robert Matijasec is a patent attorney and former USPTO examiner specializing in AI, machine learning, and cryptography patents. Learn about his background and experience.">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #1a1a1a;
+        }
+        
+        .nav {
+            background: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 2.2rem;
+            color: #000;
+            text-decoration: none;
+        }
+        
+        .logo-square {
+            width: 60px;
+            height: 60px;
+            background: black;
+            flex-shrink: 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4b5563;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: #000;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #000000 0%, #4b5563 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .bio-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+        
+        .bio-header {
+            display: flex;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            align-items: flex-start;
+        }
+        
+        .bio-photo {
+            width: 250px;
+            height: 250px;
+            background: #e5e7eb;
+            border-radius: 8px;
+            flex-shrink: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 6rem;
+            color: #9ca3af;
+        }
+        
+        .bio-intro {
+            flex: 1;
+        }
+        
+        .bio-intro h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .credentials {
+            background: #f9fafb;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 1.5rem;
+        }
+        
+        .credentials h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            color: #1f2937;
+        }
+        
+        .credentials ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .credentials li {
+            padding: 0.25rem 0;
+            color: #4b5563;
+        }
+        
+        .bio-section {
+            margin-top: 3rem;
+        }
+        
+        .bio-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #1f2937;
+        }
+        
+        .bio-section h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: #1f2937;
+        }
+        
+        .bio-section p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+        
+        .bio-section ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .bio-section li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4b5563;
+            margin-bottom: 0.5rem;
+        }
+        
+        .cta-section {
+            background: #f9fafb;
+            padding: 3rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .cta-section h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #1f2937;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            color: #4b5563;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: #9ca3af;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+        }
+        
+        @media (max-width: 768px) {
+            .bio-header {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .bio-photo {
+                width: 200px;
+                height: 200px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav">
+        <a href="/" class="logo">
+            <div class="logo-square"></div>
+            <span>QED IP</span>
+        </a>
+        <ul class="nav-links">
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/attorney.html">Attorney</a></li>
+            <li><a href="/blog.html">Insights</a></li>
+            <li><a href="/#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section class="hero">
+        <h1>Robert Matijasec</h1>
+        <p>Patent Attorney | Former USPTO Examiner | Founder of QED IP</p>
+    </section>
+    
+    <div class="bio-container">
+        <div class="bio-header">
+			 <div class="bio-photo">
+				<img src="/images/robert-headshot.jpg" alt="Robert Matijasec" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+			 </div>
+            <div class="bio-intro">
+                <h2>Your Patent Attorney</h2>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #4b5563;">I founded QED IP to help technical founders protect their innovations without the complexity and cost of large law firms. With my background as a USPTO patent examiner and software engineer, I understand both the technology you're building and exactly what the USPTO looks for in patent applications.</p>
+                
+                <div class="credentials">
+                    <h3>Credentials</h3>
+                    <ul>
+                        <li><strong>USPTO Registration:</strong> No. 79,424 (Registered December 1, 2020)</li>
+                        <li><strong>Bar Admission:</strong> Missouri (Admitted September 16, 2015)</li>
+                        <li><strong>Former USPTO Examiner:</strong> Art Units 2498 &amp; 2496 (June 2022 - October 2025)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bio-section">
+            <h2>Background</h2>
+            
+            <h3>USPTO Patent Examiner Experience</h3>
+            <p>From June 2022 to October 2025, I served as a patent examiner at the United States Patent and Trademark Office in Art Units 2498 and 2496. These art units handle some of the most technically complex patent applications in:</p>
+            <ul>
+                <li>Artificial intelligence and machine learning</li>
+                <li>Cryptography and blockchain technology</li>
+                <li>Cybersecurity systems</li>
+                <li>Computer security and access control</li>
+                <li>Data encryption and secure communications</li>
+            </ul>
+            <p>During my time at the USPTO, I examined hundreds of patent applications. I learned firsthand what makes applications succeed or fail, which technical details matter to examiners, and how to navigate the most common rejection grounds including abstract idea rejections under Alice Corp. v. CLS Bank and obviousness rejections under 35 U.S.C. § 103.</p>
+            
+            <h3>Technical Background</h3>
+            <p>Before law school, I worked as a software engineer at Boeing, where I developed manned flight hardware for the F/A-18 flight simulator. This hands-on engineering experience gave me deep insight into complex technical systems and software development.</p>
+            
+            <p>I understand the technical challenges you face because I've worked through them myself. Whether you're implementing neural networks, designing consensus mechanisms, or building secure systems, I speak your language.</p>
+            
+            <h3>Education</h3>
+            <ul>
+                <li><strong>Juris Doctor (JD)</strong> - Louisiana State University Law Center</li>
+                <li><strong>Bachelor of Arts</strong> - St. Louis University (Mathematics &amp; Computer Science)</li>
+            </ul>
+        </div>
+        
+        <div class="bio-section">
+            <h2>Why I Started QED IP</h2>
+            <p>As a USPTO examiner, I saw brilliant innovations get rejected not because they weren't novel, but because the patent applications were drafted by attorneys who didn't understand the technology or how examiners evaluate these applications.</p>
+            
+            <p>I started QED IP to bridge that gap. Technical founders need a patent attorney who:</p>
+            <ul>
+                <li>Understands the technology deeply enough to capture the true innovation</li>
+                <li>Knows the prior art landscape from examining hundreds of similar applications</li>
+                <li>Can draft claims that survive examination because they know what examiners look for</li>
+                <li>Provides transparent pricing without the BigLaw markup</li>
+            </ul>
+            
+            <p>When you work with QED IP, you work directly with me from start to finish. No handoffs to junior associates. No confusion about who's handling your case. Just straightforward, expert patent protection from someone who has been on both sides of the examination process.</p>
+        </div>
+        
+        <div class="bio-section">
+            <h2>Areas of Focus</h2>
+            <p>I specialize in patent protection for:</p>
+            <ul>
+                <li><strong>Artificial Intelligence &amp; Machine Learning:</strong> Neural networks, deep learning architectures, training algorithms, model optimization</li>
+                <li><strong>Blockchain &amp; Cryptocurrency:</strong> Consensus mechanisms, smart contracts, distributed ledger technology, cryptographic protocols</li>
+                <li><strong>Cybersecurity:</strong> Authentication systems, encryption methods, secure communications, access control</li>
+                <li><strong>Software Innovations:</strong> Algorithms, data structures, system architectures, performance optimizations</li>
+            </ul>
+        </div>
+        
+        <div class="bio-section">
+            <h2>Professional Approach</h2>
+            <p>My approach to patent law is straightforward:</p>
+            
+            <p><strong>Technical Understanding First:</strong> I take the time to understand your technology thoroughly. I can read code, understand cryptographic primitives, and follow complex algorithmic logic.</p>
+            
+            <p><strong>Strategic Patent Drafting:</strong> I draft claims with examination in mind, anticipating common rejection grounds and positioning your innovation to survive scrutiny.</p>
+            
+            <p><strong>Transparent Communication:</strong> I explain the patent process in clear terms, set realistic expectations, and keep you informed throughout prosecution.</p>
+            
+            <p><strong>Efficient Process:</strong> My examiner experience allows me to navigate USPTO procedures efficiently, saving you time and money.</p>
+        </div>
+        
+        <div class="cta-section">
+            <h2>Let's Discuss Your Innovation</h2>
+            <p>Schedule a free 30-minute consultation to discuss your technology and patent strategy. I'll provide honest feedback on patentability and outline the best path forward.</p>
+            <a href="https://cal.com/qedip/InitialPatentConsultation" class="cta-button" target="_blank">Schedule Free Consultation</a>
+            <p style="margin-top: 1.5rem; font-size: 1rem;">Or email me at <a href="mailto:contact@qedip.com" style="color: #000; font-weight: 600;">contact@qedip.com</a></p>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="/">Home</a>
+            <a href="/#services">Services</a>
+            <a href="/attorney.html">Attorney</a>
+            <a href="/blog.html">Insights</a>
+            <a href="/#contact">Contact</a>
+        </div>
+        
+        <p style="margin-top: 2rem; color: #6b7280; font-size: 0.9rem;">Attorney Advertising. Prior results do not guarantee a similar outcome.</p>
+        <p style="margin-top: 0.5rem; color: #6b7280;">© 2025 QED IP. All rights reserved.</p>
+    </footer>
+</body>
+</html>
